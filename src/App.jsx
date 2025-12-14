@@ -45,7 +45,7 @@ const App = () => {
     huespedes: 2, 
     formaPago: 'Transferencia Bancaria', 
 
-    concepto: 'Reserva Habitación Duplex',
+    concepto: 'Reserva de Habitación ',
     precioUnitarioUSD: 51.30, 
     unidades: 2, 
     comisionBooking: 8.21, 

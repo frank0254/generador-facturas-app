@@ -148,7 +148,7 @@ const FacturaDisplay = forwardRef(({ datos, calculos, onPdfGenerated, invoiceToD
           <tbody>
             <tr>
               <td className="text-start">
-                  **{dataToRender.concepto}** <br/>
+                  {dataToRender.concepto} <br/>
                   <span className="text-muted">{dataToRender.unidades} Días (Huéspedes: {dataToRender.huespedes})</span>
               </td>
               <td className="text-end">{precioUnitarioDisplay}</td>
