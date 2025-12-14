@@ -1,0 +1,60 @@
+/* --- ESTILOS PARA EL DOCUMENTO DE FACTURA --- */
+
+/* Reglas clave para la impresión / captura */
+@media screen, print {
+  .factura-container {
+      /* Asegura que el contenedor tenga el tamaño intrínseco de su contenido */
+      height: auto; 
+      overflow: visible; /* CRÍTICO: Asegura que html2canvas no lo corte si se desborda */
+      
+      /* Reglas de diseño (ya existentes) */
+      padding: 30px; 
+      max-width: 1050px; 
+      margin: 0 auto;
+  }
+}
+
+
+/* Estilos de la tabla de conceptos */
+.franja-negra th {
+  background-color: #343a40 !important; 
+  color: white !important;
+  font-weight: bold;
+  border: 1px solid #343a40 !important;
+  vertical-align: middle;
+}
+.tabla-conceptos td {
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+
+/* Estilos para la tabla de totales (que no debe tener bordes internos) */
+.tabla-totales td {
+  border: none !important;
+  padding: 2px 8px !important;
+}
+
+/* Estilo para la línea de 'Total a abonar' (ARS) */
+.fila-total-ars {
+  background-color: #f0fff0 !important; 
+  border-top: 1px solid #ccc;
+}
+
+/* Estilo para la franja decorativa (la línea marrón en la cabecera) */
+.franja-decorativa {
+  background-color: #a0522d; 
+  height: 6px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Estilo para el pie de página con información de contacto */
+.pie-factura {
+  font-size: 0.7rem;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  text-align: center;
+  color: #555;
+}
+
